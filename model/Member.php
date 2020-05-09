@@ -1,0 +1,46 @@
+<?php
+namespace Model;
+
+class Member
+{
+    private $email;
+    private $password;
+    private $nickName;
+
+    public function __construct($email, $nickName, $password)
+    {
+        $this->email = $email;
+        $this->password = $password;
+        $this->nickName = $nickName;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    public function getNickName()
+    {
+        return $this->nickName;
+    }
+
+    public function setNickName($nickName)
+    {
+        $this->nickName = $nickName;
+    }
+}
